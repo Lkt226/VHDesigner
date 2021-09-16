@@ -1,0 +1,237 @@
+/* Imports */
+@font-face {
+  font-family: "Lato_Black";
+  src: url("./typography/Lato-Black.ttf");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("./typography/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Librebar_Text";
+  src: url("./typography/LibreBarcode128Text-Regular.ttf");
+}
+@font-face {
+  font-family: "Librebar";
+  src: url("./typography/LibreBarcode128-Regular.ttf");
+}
+
+
+/* Globais */
+*{
+  font-size: 62.5%;
+  margin: 0%;
+  padding: 0%;
+  color: white;
+
+  box-sizing: border-box;
+  width: 100%;
+  
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-color: #5e5e5e #4e4e4e;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #5e5e5e;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4e4e4e;;
+  border-radius: 1px;
+  border: 2px solid #5e5e5e;
+}
+
+#ANIMATED_BG{
+  height: 100%;
+
+  background-image: url("./background/background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+  font-family: "Lato";
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: fit-content;
+}
+h1, h2, h3,h4{
+  font-family: "Lato_Black";
+  font-size: 1.3rem;
+}
+
+body{
+  width: 100vw;
+  display: flex;
+
+  background-image: url("./background/background.svg");
+  background-position-y: -45vh;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  flex-direction: row;
+  background-color: #4e4e4e;
+  overflow-x: hidden;
+}
+
+.DIVIDER_TEXTS{
+  writing-mode: vertical-rl;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  font-family: "Librebar";
+  font-size: 2rem;
+
+  min-width: 5%;
+}
+
+.SUBTITLE_LB{
+  font-family: "Librebar";  
+  font-size: 3.6rem;
+}
+
+.SUBTITLE_LB_TEXTS{
+  font-family: "Librebar_Text";  
+  font-size: 3.6rem;
+}
+
+/* Header */
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  position: absolute;
+  padding: 2%;
+  width: 100%;
+  height: 10vh;
+
+  background-color: rgba(78, 78, 78, 0.9)
+}
+header img{
+  width: calc(3.5vw + 3.5vh);
+  height: calc(3.5vw + 3.5vh);
+}
+
+#NAMELOGO{
+  font-family: "Lato_Black";
+  font-size: 1.6rem;
+}
+
+/* MENU */
+aside{
+  position: initial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-width: min-content;
+  max-width: 10vw;
+  height: auto;
+
+  padding: 2%;
+
+  background-color: transparent;
+}
+nav{
+  position: sticky;
+  top: 40%;
+}
+.NAVEGATE_MENU{
+  padding: 2vh;
+}
+
+/* Main */
+main{
+  height: auto;
+}
+
+/* Footer */
+#FOOTER{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  min-width: 30vw;
+  background-color: transparent;
+}
+
+#CONTENT-FOOTER{
+ position: sticky;
+ top: 0%;
+ padding: 10%;
+ height: 100vh;
+ width: 95%;
+ display: grid;
+}
+#CONTENT-FOOTER > nobr > h2, #CONTENT-FOOTER  > p{
+  font-family: "Librebar_Text";
+  font-size: 3vw;
+}
+
+/* CONTENT-SITE */
+
+
+/* HOME */
+#HOME{
+  height: 100vh;
+  background-color: transparent;
+}
+/* ABOUT */
+#ABOUT{
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  height: auto;
+}
+#CONTENT-ABOUT{
+  display: block;
+  width: min-content;
+  padding: 4vw;
+}
+#CONTENT-ABOUT > article {
+  padding: 4vw;
+}
+.hide_bar{
+  display: none;
+}
+
+/* JOBS */
+#JOBS{
+  display: flex;
+  flex-direction: row;
+
+}
+#CONTENT-JOBS{
+  display: block;
+  min-width: 85vw;
+  width: 100%;
+  padding: 4vw;
+}
+#CONTENT-JOBS > article{
+  padding: 4vw;
+
+}
+.project_logo{
+  width: 50%;
+  background-image: url("./projects/priscila_juca/logo_regular_priscila_juca.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.project_text{
+  width: 50%;
+}

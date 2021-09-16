@@ -1,0 +1,152 @@
+[debug] [2021-09-16T14:06:19.442Z] ----------------------------------------------------------------------
+[debug] [2021-09-16T14:06:19.445Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Victor Hugo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-09-16T14:06:19.446Z] CLI Version:   9.18.0
+[debug] [2021-09-16T14:06:19.446Z] Platform:      win32
+[debug] [2021-09-16T14:06:19.446Z] Node Version:  v14.17.5
+[debug] [2021-09-16T14:06:19.447Z] Time:          Thu Sep 16 2021 11:06:19 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2021-09-16T14:06:19.447Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-16T14:06:19.458Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-16T14:06:19.459Z] > authorizing via signed-in user (victorhugods.pereira@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Victor Hugo\Documents\GitHub\VHDesigner
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-09-16T14:06:53.672Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-09-16T14:06:53.672Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-16T14:06:53.883Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Thu, 16 Sep 2021 14:06:54 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-16T14:06:53.984Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"vd-design","name":"vh-design"}
+[debug] [2021-09-16T14:06:55.018Z] <<< HTTP RESPONSE 409 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Thu, 16 Sep 2021 14:06:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=820","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-16T14:06:55.019Z] <<< HTTP RESPONSE BODY {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2021-09-16T14:06:55.182Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at module.exports (C:\Users\Victor Hugo\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Victor Hugo\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\Victor Hugo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:400:28)
+    at Request.emit (domain.js:470:12)
+    at Request.<anonymous> (C:\Users\Victor Hugo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:400:28)
+    at Request.emit (domain.js:470:12)
+    at IncomingMessage.<anonymous> (C:\Users\Victor Hugo\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:519:28)
+    at IncomingMessage.emit (events.js:412:35)
+    at IncomingMessage.emit (domain.js:470:12)
+    at endReadableNT (internal/streams/readable.js:1317:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID vd-design. Please try again with a unique project ID.
+[debug] [2021-09-16T14:07:03.589Z] ----------------------------------------------------------------------
+[debug] [2021-09-16T14:07:03.592Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Victor Hugo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-09-16T14:07:03.592Z] CLI Version:   9.18.0
+[debug] [2021-09-16T14:07:03.593Z] Platform:      win32
+[debug] [2021-09-16T14:07:03.593Z] Node Version:  v14.17.5
+[debug] [2021-09-16T14:07:03.594Z] Time:          Thu Sep 16 2021 11:07:03 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2021-09-16T14:07:03.594Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-16T14:07:03.605Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-16T14:07:03.606Z] > authorizing via signed-in user (victorhugods.pereira@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Victor Hugo\Documents\GitHub\VHDesigner
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2021-09-16T14:07:24.007Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"vhdesign","name":"vhdesign"}
+[debug] [2021-09-16T14:07:25.032Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 16 Sep 2021 14:07:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=909","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-16T14:07:25.036Z] > refreshing access token with scopes: []
+[debug] [2021-09-16T14:07:25.036Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-16T14:07:25.236Z] <<< HTTP RESPONSE 200 {"date":"Thu, 16 Sep 2021 14:07:25 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-16T14:07:25.389Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9199797449328455370 [none]
+[debug] [2021-09-16T14:07:26.510Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9199797449328455370 200
+[debug] [2021-09-16T14:07:26.511Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9199797449328455370 {"name":"operations/cp.9199797449328455370"}
+[debug] [2021-09-16T14:07:27.014Z] [Project Creation Poller] Retrying task index 0
+[debug] [2021-09-16T14:07:27.014Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9199797449328455370 [none]
+[debug] [2021-09-16T14:07:28.228Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9199797449328455370 200
+[debug] [2021-09-16T14:07:28.228Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9199797449328455370 {"name":"operations/cp.9199797449328455370","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"1030833812950","projectId":"vhdesign","lifecycleState":"ACTIVE","name":"vhdesign","createTime":"2021-09-16T14:07:25.450Z"}}
+[debug] [2021-09-16T14:07:28.231Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-09-16T14:07:28.231Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-16T14:07:28.433Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Thu, 16 Sep 2021 14:07:28 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-16T14:07:28.595Z] >>> HTTP REQUEST POST https://firebase.googleapis.com/v1beta1/projects/vhdesign:addFirebase  
+ 
+[debug] [2021-09-16T14:07:30.540Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 16 Sep 2021 14:07:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-16T14:07:30.541Z] > refreshing access token with scopes: []
+[debug] [2021-09-16T14:07:30.541Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-16T14:07:30.767Z] <<< HTTP RESPONSE 200 {"date":"Thu, 16 Sep 2021 14:07:31 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-16T14:07:30.934Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm [none]
+[debug] [2021-09-16T14:07:32.333Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm 200
+[debug] [2021-09-16T14:07:32.333Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm {"name":"operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm"}
+[debug] [2021-09-16T14:07:32.834Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-09-16T14:07:32.835Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm [none]
+[debug] [2021-09-16T14:07:33.643Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm 200
+[debug] [2021-09-16T14:07:33.643Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm {"name":"operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm"}
+[debug] [2021-09-16T14:07:34.643Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-09-16T14:07:34.644Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm [none]
+[debug] [2021-09-16T14:07:35.927Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm 200
+[debug] [2021-09-16T14:07:35.927Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm {"name":"operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm"}
+[debug] [2021-09-16T14:07:37.929Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2021-09-16T14:07:37.930Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm [none]
+[debug] [2021-09-16T14:07:39.336Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm 200
+[debug] [2021-09-16T14:07:39.336Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm {"name":"operations/workflows/MzhmM2NhYzQtNWQxNC00NTZiLWI1YWMtOTBmOTc3MmMxMDJm","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"vhdesign","projectNumber":"1030833812950","displayName":"vhdesign","name":"projects/vhdesign","resources":{"hostingSite":"vhdesign"}}}
+[info] 
+[info] === Your Firebase project is ready! ===
+[info] 
+[info] Project information:
+[info]    - Project ID: vhdesign
+[info]    - Project Name: vhdesign
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/vhdesign/overview
+[info] i  Using project vhdesign (vhdesign) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\Victor Hugo\Documents\GitHub\VHDesigner is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=657057210&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-09-16T14:07:40.282Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"79c1f1cc399f21aa58e8","redirect_uri":"http://localhost:9005","state":"657057210"}
+[debug] [2021-09-16T14:07:40.600Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Thu, 16 Sep 2021 14:07:41 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"b10089bc78b86e86525968bf8f5e036b\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-0af8a29d.js gist.github.com/socket-worker-0af8a29d.js","x-github-request-id":"06A7:0611:23F5D8:2A0432:61434FAC"}
+[debug] [2021-09-16T14:07:40.605Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-09-16T14:07:40.922Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-09-16T14:07:40.922Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Lkt226","id":83098581,"node_id":"MDQ6VXNlcjgzMDk4NTgx","avatar_url":"https://avatars.githubusercontent.com/u/83098581?v=4","gravatar_id":"","url":"https://api.github.com/users/Lkt226","html_url":"https://github.com/Lkt226","followers_url":"https://api.github.com/users/Lkt226/followers","following_url":"https://api.github.com/users/Lkt226/following{/other_user}","gists_url":"https://api.github.com/users/Lkt226/gists{/gist_id}","starred_url":"https://api.github.com/users/Lkt226/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Lkt226/subscriptions","organizations_url":"https://api.github.com/users/Lkt226/orgs","repos_url":"https://api.github.com/users/Lkt226/repos","events_url":"https://api.github.com/users/Lkt226/events{/privacy}","received_events_url":"https://api.github.com/users/Lkt226/received_events","type":"User","site_admin":false,"name":"Victor Hugo de Souza Pereira","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":9,"public_gists":0,"followers":2,"following":5,"created_at":"2021-04-23T22:51:53Z","updated_at":"2021-09-14T01:21:28Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":2757,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Lkt226 
+[info] 

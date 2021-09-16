@@ -1,0 +1,117 @@
+/* IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;600&display=swap");
+
+/* ROOT */
+:root {
+  --color-bg: #454545;
+  --color-text: #ffffff;
+
+  --size-mobile: 700px;
+}
+
+/* GLOBAL */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  list-style-type: none;
+
+  font-family: "Fira Code";
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.only-img {
+  background-color: transparent;
+  border: 0px solid transparent;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* BODY */
+body {
+  background-color: var(--color-bg);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+
+  position: fixed;
+
+  height: 10vh;
+}
+
+/* MAIN */
+main {
+  height: 100vh;
+}
+
+/* LOGO */
+
+#logo-section {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+}
+#logo-section * {
+  height: 100%;
+}
+#logo-img {
+  height: 100%;
+}
+#logo-name {
+  height: auto;
+}
+
+/* MENU */
+/*** MOBILE MENU ***/
+@media (max-width: 600px) {
+  #menu-section-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  #menu-section-mobile * {
+    height: 100%;
+    padding: 0.65rem;
+  }
+
+  .menu-button {
+    width: 5rem;
+    background: url("/src/icons/menu-inative.svg") center no-repeat;
+    background-size: 65%;
+  }
+
+  .menu-button:focus {
+    background: url("/src/icons/menu-active.svg") center no-repeat;
+    background-size: 65%;
+  }
+
+  #menu-mobile {
+    display: flex;
+    justify-content: flex-end;
+  }
+  #menu-mobile li {
+    padding: 0.2rem 20vw 0.2rem 0;
+  }
+}
+
+/* DESKTOP MENU */
+@media (min-width: 601px) {
+  #menu-desktop {
+    display: flex;
+    flex-direction: row;
+
+    position: fixed;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 1rem;
+  }
+}

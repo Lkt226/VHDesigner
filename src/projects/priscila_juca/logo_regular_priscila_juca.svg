@@ -1,0 +1,11 @@
+<svg id="full" width="500" height="500" viewBox="0 0 214 213" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<style>
+    #full{
+        transform: translateY(-15%)
+    }    
+</style>
+
+<rect x="160.033" y="53.0332" width="75" height="150" transform="rotate(45 160.033 53.0332)" fill="white"/>
+<rect x="53.9673" y="53.0332" width="75" height="75" transform="rotate(45 53.9673 53.0332)" fill="#A9A9A9"/>
+</svg>
